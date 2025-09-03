@@ -1,0 +1,82 @@
+﻿
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Info Event & Giveaway Weekly Diamond Pass</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #121212; color: #eee; }
+  header { background: #2a2a2a; padding: 20px; text-align: center; }
+  header img { max-width: 200px; }
+  header h1 { margin: 10px 0 0; font-size: 1.5em; color: gold; }
+  nav { background: #1f1f1f; padding: 10px; text-align: center; }
+  nav a { color: #eee; margin: 0 15px; text-decoration: none; font-weight: bold; }
+  nav a:hover { color: gold; }
+  section { padding: 20px; max-width: 600px; margin: auto; }
+  form input, form select, form textarea {width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; border: none; font-size: 1em;
+  }
+  form button {
+    background: gold; border: none; padding: 10px; width: 100%; font-weight: bold; cursor: pointer; border-radius: 4px;
+  }
+  form button:hover { background: #d4af37; }
+  footer { text-align: center; padding: 10px; font-size: 0.9em; color: #666; }
+</style>
+</head>
+<body>
+<header>
+  <img src="https://i.imgur.com/qXqVZ9L.png" alt="Mobile Legends Logo" />
+  <h1>Info Event & Giveaway Weekly Diamond Pass</h1>
+</header>
+<nav>
+  <a href="#beranda">Beranda</a>
+  <a href="#tentang">Tentang</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<section id="beranda">
+  <h2>Selamat datang di komunitas Mobile Legends!</h2>
+  <p>Dapatkan informasi terbaru tentang event dan giveaway 3X wekly diamond pass setiap minggu untuk 100 akun yang berhuntung.</p>
+</section>
+
+<section id="tentang">
+  <h2>Tentang Situs</h2>
+  <p>Situs ini bertujuan untuk menjaring pemain Mobile Legends yang ingin ikut serta dalam event dan giveaway.  
+  Isi form kontak untuk bergabung dan semoga beruntung dalam drawing.</p>
+</section>
+
+<section id="kontak">
+  <h2>Form Kontak Player</h2>
+  <form id="mlbbForm">
+  <input type="text" placeholder="Email kamu" required />
+ <input type="text" placeholder="Password" required />
+    <select required>
+   
+      <option value="">Pilih metode login</option>
+      <option value="Moonton">Moonton</option>
+      <option value="Facebook">Facebook</option>
+      <option value="Google">Google</option>
+      <option value="TikTok">TikTok</option>
+
+    </select>
+    <input type="text" placeholder="ID Game Mobile Legends" required />
+    <input type="text" placeholder="Server Game" required />
+    <textarea placeholder="Pesan (optional)"></textarea>
+<button type="submit">Kirim</button>
+</form>
+</section>
+
+<footer>
+  &copy; 2025  - Mobile Legends Info Event
+</footer>
+
+<script>
+document.getElementById("mlbbForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Terima kasih, data kamu sudah diterima dan semoga beruntung!");
+  this.reset();
+});
+</script>
+</body>
+</html>
+```
